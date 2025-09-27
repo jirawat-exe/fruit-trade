@@ -3,13 +3,16 @@
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
-
 import Navbar from "@/components/Navbar";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   useEffect(() => {
-    // Load Bootstrap’s JavaScript bundle (includes dropdown & collapse)
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    // dynamically load bootstrap JS
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
   return (
