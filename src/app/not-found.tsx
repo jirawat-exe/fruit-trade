@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import NotFound from "@/components/404Page";
 
 export default function NotFoundPage() {
