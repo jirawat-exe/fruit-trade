@@ -35,48 +35,46 @@ export default function GeneralInfo() {
         {/* Contact Form - Right */}
         <div className="col-md-6">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-semibold mb-5">Ask a Question</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="form-label fw-bold">Name</label>
+              <div className="mb-4">
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="form-control"
+                  className="form-control rounded-pill"
                   placeholder="Your name"
                   required
                 />
               </div>
 
-              <div>
-                <label className="form-label fw-bold">Subject</label>
+              <div className="mb-4">
                 <input
                   type="text"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="form-control"
+                  className="form-control rounded-pill"
                   placeholder="Subject"
                   required
                 />
               </div>
 
-              <div>
-                <label className="form-label fw-bold">Message</label>
+              <div className="mb-4">
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="form-control"
+                  className="form-control rounded-4"
                   rows={5}
                   placeholder="Your message"
                   required
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-dark w-full">
+              <button type="submit" className="btn btn-dark rounded-pill w-50" 
+              style={{height: "60px"}}>
                 Send Mail
               </button>
             </form>

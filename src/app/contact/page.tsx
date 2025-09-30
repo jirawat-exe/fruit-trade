@@ -2,7 +2,7 @@ import GeneralInfo from "@/components/GeneralInfo"; // ปรับ path ให�
 
 export default function ContactPage() {
   return (
-    <div>
+    <div className="container my-5">
       <GeneralInfo />
     </div>
   );

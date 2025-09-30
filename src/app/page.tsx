@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const products = Array(12).fill({
   id: 1,
@@ -30,12 +31,16 @@ export default function Home() {
                 ฿{p.price}
               </span>
 
-              <div className="d-flex align-items-center justify-content-center bg-light rounded-top" style={{height: "120px"}}>
-                <img
+              <div
+                className="d-flex align-items-center justify-content-center bg-light rounded-top"
+                style={{ height: "120px", position: "relative", overflow: "hidden" }}
+              >
+                <Image
                   src="/tshirt_main.png"
                   alt="T-shirt"
-                  className="img-fluid h-100 rounded-top"
-                  style={{ objectFit: "cover" }}
+                  fill       // ทำให้ Image ขยายเต็ม div
+                  style={{ objectFit: "contain" }} // แทน cover → รูปจะไม่ถูกซูมเกิน
+                  className="rounded-top"
                 />
               </div>
 
