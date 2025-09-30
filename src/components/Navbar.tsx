@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light border-bottom">
+    <nav className="fixed-top navbar navbar-expand-md navbar-light bg-light border-bottom">
       <div className="container-fluid">
         {/* Brand */}
         <Link href="/" className="navbar-brand fw-bold">

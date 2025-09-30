@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const ProfilePage = () => {
   return (
-    <div className="container mt-4">
+    <div className="container mt-5">
       <div className="row mb-4">
         {/* โปรไฟล์ฝั่งซ้าย */}
         <div className="col-md-8">
@@ -73,7 +73,7 @@ const ProfilePage = () => {
           <h3><strong>สิ่งที่ต้องทำ</strong></h3>
               <div className="card p-3 mb-2">
                   <div>
-                    <p className="mb-1"><strong>ลำไยใหหยี่</strong></p>
+                    <p className="mb-1"><strong>ลำไยไหเงิน</strong></p>
                     <div className="py-2 d-flex justify-content-between">
                       <small>details</small>
                       <small className="text-muted">income date</small>
@@ -96,7 +96,7 @@ const ProfilePage = () => {
             <h3><strong>ออเดอร์ที่เข้าร่วม</strong></h3>
             <div className="card p-3 mb-2">
                 <div>
-                  <p className="mb-1"><strong>ลำไยใหหยี่</strong></p>
+                  <p className="mb-1"><strong>ลำไยไหเงิน</strong></p>
                   <div className="py-2 d-flex justify-content-between">
                   <small>details</small>
                   <small className="text-muted">income date</small>
